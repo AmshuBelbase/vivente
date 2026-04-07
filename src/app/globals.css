@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Greens */
+  --color-brand-950: #060d08;
+  --color-brand-900: #0c1d13;
+  --color-brand-800: #132b1d;
+  --color-brand-700: #1a3c28;
+  --color-brand-600: #225038;
+  --color-brand-500: #2d6a47;
+  --color-brand-400: #3d8457;
+  --color-brand-300: #52a570;
+
+  /* Gold Accents */
+  --color-gold-900: #4a3208;
+  --color-gold-800: #6b4b0c;
+  --color-gold-700: #8a6010;
+  --color-gold-600: #a87820;
+  --color-gold-500: #c9a030;
+  --color-gold-400: #d4b050;
+  --color-gold-300: #e0c878;
+  --color-gold-200: #edd8a8;
+  --color-gold-100: #f7edd0;
+
+  /* Cream Backgrounds */
+  --color-cream-50:  #fdfcf8;
+  --color-cream-100: #faf8f3;
+  --color-cream-200: #f2ede0;
+
+  /* Fonts */
+  --font-heading: var(--font-playfair);
+  --font-display: var(--font-cormorant);
+  --font-sans:    var(--font-inter);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  background-color: var(--color-cream-100);
+  color: var(--color-brand-700);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-cream-100); }
+::-webkit-scrollbar-thumb { background: var(--color-gold-500); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-gold-600); }
+
+/* globals.css */
+/* globals.css */
+/* globals.css */
+/* .navbar-logo {
+  height: 56px !important;
+  width: auto !important;
+  max-width: none !important;
+  transform: scale(1.2) translateX(-25px);
+} */
+
+/* Logo wrapper */
+.logo-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden; /* keep the fill animation clipped */
+  line-height: 0;
+}
+
+/* Gold overlay — only shows on the PNG's white pixels */
+.logo-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #D4AF37; /* gold */
+  z-index: 2;
+  /* Mask with the same PNG so only the "white" pixels get tinted. */
+  -webkit-mask-image: url('/white_logo.png');
+  mask-image: url('/white_logo.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: left center;
+  mask-position: left center;
+  border-radius: 0;
+  /* Fill the whole logo at once (no directional animation). */
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.logo-link:hover::after {
+  opacity: 1;
+}
+
+/* Logo image sizing */
+.navbar-logo {
+  height: 56px !important;
+  width: auto !important;
+  max-width: none !important;
+  transform: none;
+  position: relative;
+  z-index: 1; /* keep image below the gold fill overlay */
+  display: block;
+}

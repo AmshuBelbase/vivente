@@ -1,0 +1,66 @@
+﻿Enquiry Form
+Headline:
+ Begin Your Luxury Living Journey
+Subheading:
+ Share your requirements with us, and our team will get in touch to discuss your vision, preferences, and project needs.
+Form Fields
+Full Name
+ Placeholder: Enter your full name
+Phone Number
+ Placeholder: Enter your phone number
+Email Address
+ Placeholder: Enter your email address
+Service Interested In
+ Dropdown options:
+* Construction
+
+* Interior Designing & Execution
+
+* Swimming Pools
+
+* Landscaping
+
+* Water Features
+
+* Water Wellness
+
+* Real Estate & Property Consultancy
+
+* AMC & Facility Management
+
+Project Type
+ Dropdown options:
+   * Luxury Villa
+
+   * Residential Development
+
+   * Commercial Project
+
+   * Renovation / Upgrade
+
+   * Wellness Space
+
+   * Outdoor / Landscape Project
+
+   * Property Investment
+
+   * Other
+
+Project Location
+ Placeholder: Enter project location
+Project Timeline
+ Dropdown options:
+      * Immediate
+
+      * Within 1 Month
+
+      * Within 3 Months
+
+      * Within 6 Months
+
+      * Flexible
+
+Message / Requirements
+ Placeholder: Tell us about your project, vision, and requirements
+Button Text
+Submit Enquiry
