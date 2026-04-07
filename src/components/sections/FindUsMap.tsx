@@ -88,8 +88,10 @@ export default function FindUsMap() {
             className="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-950/10 border border-gold-200/20"
             style={{ height: "450px" }}
           >
+            {/* https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.9973874144!2d79.72908093414814!3d13.047630371246956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin */}
+            {/* https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1943.7538637966168!2d80.24988359405114!3d13.003306902178954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCross%20Street%2C%20Kasturba%20Nagar%5CnAdyar%2C%20Chennai%20%5Cu2013%20600%20020%5CnTamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1775589630573!5m2!1sen!2sin */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.9973874144!2d79.72908093414814!3d13.047630371246956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1943.7538637966168!2d80.24988359405114!3d13.003306902178954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCross%20Street%2C%20Kasturba%20Nagar%5CnAdyar%2C%20Chennai%20%5Cu2013%20600%20020%5CnTamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1775589630573!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "saturate(0.8) contrast(1.05)" }}
