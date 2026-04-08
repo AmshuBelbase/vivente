@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       await transporter.sendMail({
         from: `"Enquiry at Vivente" <${process.env.SMTP_USER}>`,
         to: process.env.ENQUIRY_TO,
-        bcc: process.env.SMTP_USER,
+        // bcc: process.env.SMTP_USER,
         replyTo: emailAddress,
         subject: `New Enquiry from ${fullName}`,
         text: `
