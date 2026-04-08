@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Cormorant_Garamond } from "next/font/google";
+
+// Google Analytics for production
 import GoogleAnalyticsProd from '@/components/GoogleAnalyticsProd';
+
 
 import "./globals.css";
 
@@ -34,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${playfair.variable} ${inter.variable} ${cormorant.variable} antialiased`}
       >
         {children}
-        <GoogleAnalyticsProd />
+        <GoogleAnalyticsProd /> 
       </body>
     </html>
   );

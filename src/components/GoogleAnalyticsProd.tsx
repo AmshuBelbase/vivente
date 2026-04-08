@@ -1,5 +1,6 @@
 'use client';
 
+// Google Analytics for production
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
