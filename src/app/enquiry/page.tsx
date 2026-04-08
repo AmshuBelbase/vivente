@@ -96,6 +96,9 @@ export default function EnquiryPage() {
   const [projectTimeline, setProjectTimeline] = useState<ProjectTimeline>("Immediate");
   const [message, setMessage] = useState("");
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
   return (
     <main className="relative">
       <Navbar alwaysDark />
@@ -125,10 +128,50 @@ export default function EnquiryPage() {
             {/* Form */}
             <div className="bg-white/70 backdrop-blur-sm border border-gold-200/30 rounded-3xl p-7 md:p-10 shadow-xl shadow-brand-950/5">
               <form
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
-                  // No backend wired yet; keeping a friendly confirmation.
-                  alert("Enquiry submitted! We'll get back to you shortly.");
+                  setIsSubmitting(true);
+                  setSubmitStatus("idle");
+
+                  try {
+                    const res = await fetch("/api/enquiry", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({
+                        fullName,
+                        countryCode,
+                        phoneNumber,
+                        emailAddress,
+                        serviceInterestedIn,
+                        projectType,
+                        projectLocation,
+                        projectTimeline,
+                        message,
+                      }),
+                    });
+
+                    const data = await res.json();
+
+                    if (data.success) {
+                      setSubmitStatus("success");
+                      // Reset form
+                      setFullName("");
+                      setCountryCode("+91");
+                      setPhoneNumber("");
+                      setEmailAddress("");
+                      setServiceInterestedIn("Construction");
+                      setProjectType("Luxury Villa");
+                      setProjectLocation("");
+                      setProjectTimeline("Immediate");
+                      setMessage("");
+                    } else {
+                      setSubmitStatus("error");
+                    }
+                  } catch {
+                    setSubmitStatus("error");
+                  } finally {
+                    setIsSubmitting(false);
+                  }
                 }}
                 className="space-y-5"
               >
@@ -266,12 +309,24 @@ export default function EnquiryPage() {
                   />
                 </div>
 
+                {submitStatus === "success" && (
+                  <div className="text-center py-2 px-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm font-medium">
+                    ✅ Enquiry submitted! We'll get back to you shortly.
+                  </div>
+                )}
+                {submitStatus === "error" && (
+                  <div className="text-center py-2 px-4 bg-red-50 border border-red-200 rounded-xl text-red-600 text-sm font-medium">
+                    ❌ Something went wrong. Please try again.
+                  </div>
+                )}
+
                 <div className="flex items-center justify-center pt-2">
                   <button
                     type="submit"
-                    className="bg-gold-500 hover:bg-gold-400 text-brand-950 font-semibold text-sm px-8 py-3 rounded-full tracking-widest uppercase transition-all duration-300 shadow-lg shadow-gold-900/20 hover:shadow-gold-500/30"
+                    disabled={isSubmitting}
+                    className="bg-gold-500 hover:bg-gold-400 disabled:opacity-60 disabled:cursor-not-allowed text-brand-950 font-semibold text-sm px-8 py-3 rounded-full tracking-widest uppercase transition-all duration-300 shadow-lg shadow-gold-900/20 hover:shadow-gold-500/30"
                   >
-                    Submit Enquiry
+                    {isSubmitting ? "Submitting..." : "Submit Enquiry"}
                   </button>
                 </div>
               </form>
