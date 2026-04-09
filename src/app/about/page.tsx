@@ -337,8 +337,15 @@ export default function AboutPage() {
                 beautiful&mdash;and maybe throw a pool party while we&apos;re at it.
               </motion.p>
 
-              <motion.div variants={fadeInUp} className="pt-2 space-y-0.5">
+              <motion.div variants={fadeInUp} className="pt-2 space-y-1">
                 <p>Warmly,</p>
+                <Image
+                  src="/founder-signature.png"
+                  alt="Vivian's signature"
+                  width={180}
+                  height={60}
+                  className="my-1 opacity-90 [filter:brightness(0)_invert(1)]"
+                />
                 <p>Vivian</p>
                 <p>Founder, Vivente</p>
               </motion.div>
