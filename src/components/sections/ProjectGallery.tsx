@@ -82,9 +82,9 @@ export default function ProjectGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="relative"
+          className="relative max-w-4xl mx-auto"
         >
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-950/20 min-h-[360px]">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-950/20 aspect-[3/2]">
             <AnimatePresence mode="wait" initial={false} custom={direction}>
               <motion.div
                 key={p.src}

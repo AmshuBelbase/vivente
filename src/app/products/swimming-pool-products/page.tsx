@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
-import { fadeInUp, staggerContainer, viewport } from "@/lib/animations";
+import { fadeInUp, viewport } from "@/lib/animations";
 
 const productCategories = [
   {
@@ -306,17 +306,14 @@ export default function SwimmingPoolProductsPage() {
             centered
           />
 
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewport}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {productCategories.map((category) => (
               <motion.div
                 key={category.title}
                 variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.15 }}
                 className="bg-white/60 border border-gold-200/30 hover:border-gold-400/40 rounded-3xl p-8 transition-all duration-300 hover:bg-white/80 hover:shadow-lg hover:shadow-brand-950/5"
               >
                 <h3
@@ -335,7 +332,7 @@ export default function SwimmingPoolProductsPage() {
                 </ul>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 

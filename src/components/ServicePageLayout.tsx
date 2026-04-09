@@ -150,7 +150,7 @@ export default function ServicePageLayout({
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={viewport}
               transition={{ duration: 0.7 }}
-              className="relative"
+              className="relative order-first lg:order-none"
             >
               {imagePath ? (
                 <div className="rounded-3xl overflow-hidden shadow-2xl shadow-brand-950/20 aspect-[4/3]">

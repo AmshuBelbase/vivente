@@ -12,6 +12,7 @@ export default function WaterFeaturesPage() {
       title="Water Features"
       subtitle="Bespoke water features that introduce movement, elegance, and a calming sensory experience to architectural environments."
       heroGradient=""
+      imagePath="/projects/azure-heights.jpg"
       overview="Water has the power to transform a space. Vivente creates bespoke water features including fountains, waterfalls, ponds, and flowing streams that introduce movement, elegance, and a calming sensory experience to architectural environments. Our water feature designs become captivating focal points within landscapes, residences, resorts, and commercial environments."
       offeringsTitle="Water Feature Designs"
       offerings={[

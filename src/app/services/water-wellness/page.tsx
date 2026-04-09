@@ -12,6 +12,7 @@ export default function WaterWellnessPage() {
       title="Water Wellness"
       subtitle="Luxurious wellness environments designed to promote relaxation, rejuvenation, and holistic wellbeing."
       heroGradient=""
+      imagePath="/projects/azure-heights.jpg"
       overview="Vivente introduces luxury water wellness installations designed to promote relaxation, rejuvenation, and holistic wellbeing. Our wellness solutions combine modern spa technology with elegant architectural design to create tranquil personal retreats within residential and commercial spaces. We bring the experience of a world-class spa into private homes and commercial settings with uncompromising quality."
       offeringsTitle="Wellness Solutions"
       offerings={[

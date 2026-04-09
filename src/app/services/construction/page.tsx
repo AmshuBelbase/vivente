@@ -12,6 +12,7 @@ export default function ConstructionPage() {
       title="Luxury Construction"
       subtitle="Transforming architectural visions into exceptional built environments through precision-driven construction and luxury development."
       heroGradient=""
+      imagePath="/projects/azure-heights.jpg"
       overview="Vivente specializes in the construction of luxury villas, residential developments, and premium commercial projects. Combining modern engineering, meticulous craftsmanship, and superior materials, we deliver structures that are both architecturally striking and built to endure for generations. Every structure we build reflects durability, architectural excellence, and timeless design."
       offeringsTitle="What We Build"
       offerings={[
