@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, viewport } from "@/lib/animations";
-import { Instagram, Facebook, Linkedin, Twitter, ArrowRight } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Twitter, ArrowRight, XIcon } from "lucide-react";
 import { COMPANY } from "@/lib/company";
 
 const serviceLinks = [
@@ -21,7 +21,7 @@ const socials = [
   { icon: Instagram, href: "#", label: "Instagram" },
   { icon: Facebook, href: "#", label: "Facebook" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: XIcon, href: "#", label: "X" },
 ];
 
 export default function Footer() {

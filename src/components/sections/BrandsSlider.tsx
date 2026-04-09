@@ -4,24 +4,19 @@ import { motion } from "framer-motion";
 import { fadeInUp, viewport } from "@/lib/animations";
 
 const clients = [
-  { name: "L&T", logo: null },
-  { name: "Apollo Hospitals", logo: null },
-  { name: "TVS", logo: null },
-  { name: "Prestige Group", logo: null },
-  { name: "Navins Builders", logo: null },
-  { name: "Tafe", logo: null },
-  { name: "Chennai Metro Rail", logo: null },
-  { name: "Tamilnadu Tourism", logo: null },
-  { name: "Paramount Textiles", logo: null },
-  { name: "Madha Medical College", logo: "/clients/madha-medical.png" },
+  { name: "L&T", logo: "/clients/L&T.png" },
+  { name: "Apollo Hospitals", logo: "clients/apollo.png" },
+  { name: "TVS", logo: "clients/TVS.png" },
+  { name: "Prestige Group", logo: "/clients/prestige.png" },
+  { name: "Navins Builders", logo: "/clients/navin's.png" },
+  { name: "Tafe", logo: "/clients/tafe.png" },
+  { name: "Chennai Metro Rail", logo: "/clients/Metro.png" },
+  { name: "Tamilnadu Tourism", logo: "/clients/TamilNadu.png" },
+  { name: "Paramount Textiles", logo: "/clients/paramount.png" },
+  { name: "Madha Medical College", logo: "/clients/madha.png" },
   { name: "Medimix", logo: "/clients/medimix.png" },
-  { name: "Sol Fitness Resort", logo: null },
-  { name: "Anugragha Builders", logo: "/clients/anugragha-builders.png" },
-  { name: "HiFour", logo: "/clients/hifour.png" },
-  { name: "MonteCarlo", logo: "/clients/montecarlo.avif" },
-  { name: "Kevin Electricals", logo: "/clients/kevin-electricals.png" },
-  { name: "Rainbow", logo: "/clients/rainbow.png" },
-  { name: "Pradeep Cargo", logo: "/clients/pradeep-cargo.jpg" },
+  { name: "Sol Fitness Resort", logo: "/clients/Sol Fitness.png" },
+
 ];
 
 export default function BrandsSlider() {
@@ -77,13 +72,13 @@ export default function BrandsSlider() {
             <div
               key={i}
               className="flex-shrink-0 mx-5 flex items-center justify-center bg-white/80 border border-gold-200/40 hover:border-gold-400/60 rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-gold-100/50"
-              style={{ width: client.logo ? "220px" : "220px", height: "110px", padding: "16px 28px" }}
+              style={{ width: client.logo ? "220px" : "220px", height: "150px", padding: "16px 28px" }}
             >
               {client.logo ? (
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-full max-w-full object-contain "
                 />
               ) : (
                 <p
