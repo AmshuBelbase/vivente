@@ -16,10 +16,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ProjectGallery />
-      <WhyChooseUs />
       <ProjectsSlider />
+      <WhyChooseUs />
       <BrandsSlider />
-<Services />
+      <Services />
       <Products />
       <Testimonials />
       <FindUsMap />

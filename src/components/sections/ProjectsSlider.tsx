@@ -6,72 +6,56 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { fadeInUp, viewport } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
-const projects = [
+const projects = [ 
   {
-    id: 1,
-    title: "Azure Heights",
-    category: "Luxury Villa Construction",
-    description:
-      "A bespoke 6-bedroom estate spanning 8,000 sq.ft featuring an infinity pool, curated landscaping, and full turnkey interiors — redefining residential luxury.",
-    accentGradient: "from-emerald-900/60 via-brand-950 to-brand-900",
-    tags: ["Villa", "Infinity Pool", "Landscaping", "Turnkey Interiors"],
-    stat1Label: "Area",
-    stat1Value: "8,000 sq.ft",
-    stat2Label: "Duration",
-    stat2Value: "18 Months",
+    "id": 1,
+    "title": "St. George’s Cathedral Rises in Grace Once More",
+    "category": "Heritage Landscape Restoration",
+    "description": "In the heart of Chennai, the historic grounds of St. George’s Cathedral have been gracefully revitalized through a bespoke landscaping intervention by Vivente. With deep respect for heritage, the design blends timeless aesthetics with refined luxury—curated greenery, natural stone pathways, and tranquil spaces enhance the church’s grandeur. The project embodies Vivente’s philosophy of elegance and balance, preserving sacred beauty while enriching its surroundings.",
+    "accentGradient": "from-green-900/50 via-brand-900 to-brand-950",
+    "tags": ["Heritage", "Landscaping", "Restoration", "Historic Architecture"],
+    "stat1Label": "Location",
+    "stat1Value": "Chennai, India",
+    "stat2Label": "Completion Date",
+    "stat2Value": "October 30, 2025"
   },
   {
-    id: 2,
-    title: "Sapphire Infinity",
-    category: "Resort-Style Swimming Pool",
-    description:
-      "A breathtaking cliff-edge infinity pool with underwater LED lighting, water-wall features, and natural stone decking — an immersive aquatic experience.",
-    accentGradient: "from-blue-900/40 via-slate-950 to-brand-950",
-    tags: ["Infinity Edge", "LED Lighting", "Water Feature", "Stone Deck"],
-    stat1Label: "Dimensions",
-    stat1Value: "12×4 Meters",
-    stat2Label: "Duration",
-    stat2Value: "8 Weeks",
+    "id": 2,
+    "title": "SOL Fitness Resort",
+    "category": "Wellness Resort Development",
+    "description": "On the outskirts of Chennai, SOL Fitness Resort redefines holistic luxury through an immersive retreat devoted to wellness and serenity. Executed by Vivente, the resort seamlessly integrates architecture, landscape, and water wellness features to create tranquil, sensory spaces. Sustainability, refined materials, and thoughtful spatial planning together shape an environment where relaxation, nature, and design coexist in harmony—offering a timeless destination for rejuvenation and mindful living.",
+    "accentGradient": "from-purple-900/40 via-brand-950 to-slate-950",
+    "tags": ["Wellness", "Resort", "Landscaping", "Water Features", "Holistic Design"],
+    "stat1Label": "Location",
+    "stat1Value": "Chennai, India",
+    "stat2Label": "Completion",
+    "stat2Value": "2025"
   },
   {
-    id: 3,
-    title: "Emerald Garden Estate",
-    category: "Luxury Landscaping",
-    description:
-      "A 2-acre landscape transformation featuring manicured lawns, tropical plantings, pergolas, illuminated garden water bodies, and bespoke pathways.",
-    accentGradient: "from-green-900/50 via-brand-900 to-brand-950",
-    tags: ["Garden Design", "Water Bodies", "Hardscape", "Irrigation"],
-    stat1Label: "Land Area",
-    stat1Value: "2 Acres",
-    stat2Label: "Duration",
-    stat2Value: "12 Weeks",
+    "id": 3,
+    "title": "Azure Bay Redefines Premium Gated Community Living",
+    "category": "Residential Community Development",
+    "description": "Located along Chennai’s coastal stretch, Azure Bay is a premium gated community blending comfort, security, and contemporary living. Developed by Vivente, it features well-planned villas, landscaped zones, and modern amenities for refined everyday life. Thoughtful design ensures openness, privacy, and connectivity. With advanced surveillance and quality infrastructure, Azure Bay offers residents an exclusive community experience—where modern living meets the serenity of belonging.",
+    "accentGradient": "from-sky-900/70 via-brand-950 to-emerald-900",
+    "tags": ["Community", "Villas", "Amenities", "Security", "Residential"],
+    "stat1Label": "Location",
+    "stat1Value": "Chennai, India",
+    "stat2Label": "Type",
+    "stat2Value": "Premium Gated Community"
   },
-  {
-    id: 4,
-    title: "Serenity Wellness Retreat",
-    category: "Water Wellness Sanctuary",
-    description:
-      "A private wellness sanctuary featuring a custom sauna, herbal steam room, jacuzzi, and swim spa, seamlessly integrated into a resort-style landscape.",
-    accentGradient: "from-purple-900/40 via-brand-950 to-slate-950",
-    tags: ["Sauna", "Steam Room", "Jacuzzi", "Swim Spa"],
-    stat1Label: "Wellness Units",
-    stat1Value: "4 Zones",
-    stat2Label: "Duration",
-    stat2Value: "10 Weeks",
-  },
-  {
-    id: 5,
-    title: "Cascade Falls",
-    category: "Bespoke Water Feature",
-    description:
-      "A dramatic 3-tier natural rock waterfall with illuminated koi pond, bubbling garden springs, and custom fountain — transforming an estate entrance completely.",
-    accentGradient: "from-teal-900/40 via-brand-950 to-brand-900",
-    tags: ["Waterfall", "Koi Pond", "Fountain", "Garden Springs"],
-    stat1Label: "Feature Height",
-    stat1Value: "4.5 Meters",
-    stat2Label: "Duration",
-    stat2Value: "6 Weeks",
-  },
+  // {
+  //   id: 4,
+  //   title: "Cascade Falls",
+  //   category: "Bespoke Water Feature",
+  //   description:
+  //     "A dramatic 3-tier natural rock waterfall with illuminated koi pond, bubbling garden springs, and custom fountain — transforming an estate entrance completely.",
+  //   accentGradient: "from-teal-900/40 via-brand-950 to-brand-900",
+  //   tags: ["Waterfall", "Koi Pond", "Fountain", "Garden Springs"],
+  //   stat1Label: "Feature Height",
+  //   stat1Value: "4.5 Meters",
+  //   stat2Label: "Duration",
+  //   stat2Value: "6 Weeks",
+  // },
 ];
 
 export default function ProjectsSlider() {
