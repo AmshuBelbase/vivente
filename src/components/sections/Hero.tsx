@@ -17,8 +17,8 @@ const heroWords = ["Crafting", "Complete", "Luxury", "Lifestyles", "—" ,"From"
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  const y = useTransform(scrollYProgress, [0.4, 1], ["0%", "25%"]);
+  const opacity = useTransform(scrollYProgress, [0.5, 1], [1, 0]);
 
   return (
     <section
