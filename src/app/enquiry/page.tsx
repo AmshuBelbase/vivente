@@ -4,6 +4,16 @@ import { useMemo, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact & Enquiry',
+  description: 'Get in touch with Vivente Lifestyle for luxury pool, interior, construction or real estate enquiries.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/enquiry',
+  },
+};
+
 type ServiceInterestedIn =
   | "Construction"
   | "Interior Designing & Execution"

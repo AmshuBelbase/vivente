@@ -8,6 +8,16 @@ import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { fadeInUp, viewport } from "@/lib/animations";
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Swimming Pool Products',
+  description: 'Explore our range of premium swimming pool products and equipment for luxury pools, interiors, and real estate projects.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/products/swimming-pool-products',
+  },
+};
+
 const productCategories = [
   {
     title: "Filters",

@@ -1,8 +1,13 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
-export const metadata = {
-  title: "Premium Swimming Pool Design & Construction in Chennai | Vivente Lifestyle",
-  description: "Luxury swimming pool design, construction, and maintenance for residences, resorts, and commercial spaces.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Premium Swimming Pool Design & Construction in Chennai',
+  description: 'Luxury swimming pool design, construction, and maintenance for residences, resorts, and commercial spaces.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/services/swimming-pools',
+  },
 };
 
 export default function SwimmingPoolsPage() {

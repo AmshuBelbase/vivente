@@ -1,8 +1,13 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
-export const metadata = {
-  title: "Luxury Landscaping & Garden Design in Chennai | Vivente Lifestyle",
-  description: "Sophisticated landscape design and outdoor living environments crafted with natural elements and innovative design.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Luxury Landscaping & Garden Design in Chennai',
+  description: 'Sophisticated landscape design and outdoor living environments crafted with natural elements and innovative design.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/services/landscaping',
+  },
 };
 
 export default function LandscapingPage() {

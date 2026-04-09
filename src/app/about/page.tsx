@@ -15,6 +15,16 @@ import {
   viewport,
 } from "@/lib/animations";
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',  // becomes "About Us | Vivente Lifestyle"
+  description: 'Learn about Vivente Lifestyle — our story, vision, and the team behind India\'s premium luxury lifestyle services.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/about',
+  },
+};
+
 const whatWeDo = [
   {
     title: "Construction",
