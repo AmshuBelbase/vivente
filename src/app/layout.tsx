@@ -25,7 +25,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Vivente | Crafting Luxury",
+  title: "Vivente Lifestyle | Luxury Construction, Swimming Pools & Landscaping in Chennai",
   description:
     "Premium luxury construction, swimming pools, landscaping & lifestyle company. Building spaces that inspire, endure, and elevate everyday life.",
 };
