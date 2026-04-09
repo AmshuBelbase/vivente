@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata = {
-  title: "Luxury Construction | Vivente",
+  title: "Luxury Villa & Bungalow Construction in Chennai | Vivente Lifestyle",
   description: "Bespoke luxury villa construction, residential developments, and premium commercial projects built with precision and excellence.",
 };
 

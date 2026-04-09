@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata = {
-  title: "Facility Management | Vivente",
+  title: "Premium Facility Management & Maintenance Services in Chennai | Vivente Lifestyle",
   description: "Professional facility management and property care services to keep your property pristine, efficient, and valuable.",
 };
 

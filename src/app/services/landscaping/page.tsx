@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata = {
-  title: "Landscaping | Vivente",
+  title: "Luxury Landscaping & Garden Design in Chennai | Vivente Lifestyle",
   description: "Sophisticated landscape design and outdoor living environments crafted with natural elements and innovative design.",
 };
 

@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata = {
-  title: "Water Features | Vivente",
+  title: "Designer Water Features & Fountains in Chennai | Vivente Lifestyle",
   description: "Bespoke water features — fountains, waterfalls, ponds and streams that bring movement and elegance to any space.",
 };
 

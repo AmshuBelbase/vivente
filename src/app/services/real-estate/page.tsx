@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata = {
-  title: "Real Estate & Consultancy | Vivente",
+  title: "Luxury Real Estate Development & Advisory in Chennai | Vivente Lifestyle",
   description: "Exclusive real estate advisory and property consultancy services for premium residential and commercial investments.",
 };
 
