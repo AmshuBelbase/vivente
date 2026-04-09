@@ -5,8 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryImages = [
-  { src: "/projects/azure-heights.jpg", alt: "Azure Heights project" , caption: "Azure Heights" },
-  { src: "/projects/sapphire-infinity.jpg", alt: "Sapphire Infinity project" , caption: "Sapphire Infinity" },
+  { src: "/projects/Cathedral_Rises.jpg", alt: "Cathedral Rises project" , caption: "Cathedral Rises" },
+  { src: "/projects/SOL_FITNESS_RESORT.jpg", alt: "SOL FITNESS RESORT project" , caption: "SOL FITNESS RESORT" },
+  { src: "/projects/classic_jhula.png", alt: "Classic Jhula project" , caption: "Classic Jhula" },
   { src: "/projects/serenity-wellness-retreat.jpg", alt: "Serenity Wellness Retreat project" , caption: "Serenity Wellness Retreat" },
   { src: "/projects/cascade-falls.jpg", alt: "Cascade Falls project" , caption: "Cascade Falls" },
 ];
