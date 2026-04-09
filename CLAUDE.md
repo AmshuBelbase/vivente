@@ -1,8 +1,8 @@
-# Viventé Website — CLAUDE.md
+# Vivente Website — CLAUDE.md
 
 ## Project Overview
 
-Viventé is a luxury lifestyle brand website showcasing premium construction, swimming pools, landscaping, and interior design services. Built as a marketing/portfolio site with a strong focus on visual storytelling and smooth animations.
+Vivente is a luxury lifestyle brand website showcasing premium construction, swimming pools, landscaping, and interior design services. Built as a marketing/portfolio site with a strong focus on visual storytelling and smooth animations.
 
 ## Tech Stack
 

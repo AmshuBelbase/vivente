@@ -43,7 +43,7 @@ const testimonials = [
   {
     name: "Prescilla, Shollinganallur",
     quote:
-      "Very happy with the interior work done for our home. Vivian and his team understood our requirements well and completed the work neatly and on time. The best part was how budget friendly and flexible they were when discussing the interior budget. They guided us properly without pushing anything unnecessary. Everyone in our apartment really liked the work, and I’ve already referred them to many people in our community. Overall, a very good and hassle-free experience.",
+      "Very happy with the interior work done for our home. Vivian and his team understood our requirements well and completed the work neatly and on time. The best part was how budget-friendly and flexible they were when discussing the interior budget. They guided us properly without pushing anything unnecessary. Everyone in our apartment really liked the work, and I’ve already referred them to many people in our community. Overall, a very good and hassle-free experience.",
   },
   {
     name: "Ashwitha Reddy, Hyderabad",
