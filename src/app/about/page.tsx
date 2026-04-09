@@ -72,7 +72,7 @@ export default function AboutPage() {
       <Navbar alwaysDark />
 
       {/* ── 1. Hero ─────────────────────────────────────────────── */}
-      <section className="relative min-h-[65vh] flex flex-col justify-end pb-20 overflow-hidden">
+      <section className="relative min-h-[50vh] flex flex-col justify-end pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(201,160,48,0.12),transparent)]" />
         <div
@@ -97,7 +97,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-cream-50 mb-6 max-w-4xl leading-tight"
+            className="text-3xl md:text-3xl lg:text-5xl font-bold text-cream-50 mb-6 max-w-4xl leading-tight"
           >
             About Us
           </motion.h1>
@@ -337,7 +337,7 @@ export default function AboutPage() {
                 beautiful&mdash;and maybe throw a pool party while we&apos;re at it.
               </motion.p>
 
-              <motion.div variants={fadeInUp} className="pt-2 space-y-1">
+              <motion.div variants={fadeInUp} className="pt-2 space-y-0.5">
                 <p>Warmly,</p>
                 <Image
                   src="/founder-signature.png"
@@ -357,7 +357,7 @@ export default function AboutPage() {
               initial="hidden"
               whileInView="visible"
               viewport={viewport}
-              className="relative w-64 lg:w-72 flex-shrink-0 mx-auto lg:mx-0"
+              className="relative w-64 lg:w-72 flex-shrink-0 mx-auto lg:mx-0 order-first lg:order-none mb-10 lg:mb-0"
             >
               <div className="relative rounded-2xl overflow-hidden border-2 border-gold-500/40 shadow-2xl shadow-brand-950/60 aspect-[3/4]">
                 <Image

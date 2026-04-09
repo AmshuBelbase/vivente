@@ -220,12 +220,15 @@ export default function ServicePageLayout({
               <motion.div
                 key={i}
                 variants={fadeInUp}
-                className="flex items-start gap-4 bg-brand-900/60 border border-brand-700/30 hover:border-gold-600/40 rounded-2xl p-6 group transition-all duration-300 hover:bg-brand-800/70"
+                className="px-2 pt-4 pb-6"
               >
-                <CheckCircle2 size={20} className="text-gold-500 flex-shrink-0 mt-0.5 group-hover:text-gold-400 transition-colors" />
-                <p className="text-cream-200/70 text-sm leading-relaxed group-hover:text-cream-200/90 transition-colors">
-                  {item.label}
-                </p>
+                <div className="flex items-start gap-4 mb-4">
+                  <CheckCircle2 size={20} className="text-gold-500 flex-shrink-0 mt-0.5" />
+                  <p className="text-cream-100/90 text-base leading-relaxed">
+                    {item.label}
+                  </p>
+                </div>
+                <div className="h-px w-full bg-gradient-to-r from-gold-500 to-transparent" />
               </motion.div>
             ))}
           </motion.div>
