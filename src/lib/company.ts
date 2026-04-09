@@ -2,7 +2,7 @@ export const COMPANY = {
   name: "Vivente",
   tagline: "Crafting Luxury, Building Legacies.",
   email: "enquiry@viventelifestyle.com",
-  phone: "+91 98765 43210",
+  phone: "+91 8939203070",
   address: {
     line1: "58-A , Santhosh Nagar",
     line2: "Mugaliwakkam main road,Chennai \u2013 600 125",
