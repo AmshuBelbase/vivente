@@ -24,13 +24,6 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-// export const metadata: Metadata = {
-//   title: "Vivente Lifestyle | Luxury Construction, Swimming Pools & Landscaping in Chennai",
-//   description:
-//     "Premium luxury construction, swimming pools, landscaping & lifestyle company. Building spaces that inspire, endure, and elevate everyday life.",
-// };
-
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://viventelifestyle.com'),
   title: {
@@ -39,6 +32,14 @@ export const metadata: Metadata = {
   },
   description:
     'Vivente Lifestyle offers luxury construction, interior design, swimming pools, landscaping, water features, and real estate services across India.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   keywords: [
     'luxury swimming pools',
     'interior design',
