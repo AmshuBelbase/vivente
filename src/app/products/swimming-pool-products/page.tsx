@@ -11,6 +11,7 @@ import { fadeInUp, viewport } from "@/lib/animations";
 const productCategories = [
   {
     title: "Filters",
+    image: "/products/Filters.png",
     items: [
       "Swimming Pool Sand Filters",
       "Wall Mount Filters",
@@ -21,6 +22,7 @@ const productCategories = [
   },
   {
     title: "Pumps",
+    image: "/products/Pump 1.png",
     items: [
       "Pool Pumps",
       "Spa Pumps",
@@ -29,6 +31,7 @@ const productCategories = [
   },
   {
     title: "Disinfection",
+    image: "/products/Disinfectant 1.png",
     items: [
       "UV Systems",
       "Ozonators",
@@ -38,6 +41,7 @@ const productCategories = [
   },
   {
     title: "Pool White Goods",
+    image: "/products/Pump 1.png",
     items: [
       "Skimmer Box (Wide/Small Mouth)",
       "Deckbox",
@@ -52,6 +56,7 @@ const productCategories = [
   },
   {
     title: "Pool Chemicals",
+    image: "/products/Pump 1.png",
     items: [
       "Chlorine",
       "Soda Ash",
@@ -62,6 +67,7 @@ const productCategories = [
   },
   {
     title: "Pool Furniture",
+    image: "/products/Pump 1.png",
     items: [
       "Loungers",
       "Poolside Umbrellas",
@@ -71,6 +77,7 @@ const productCategories = [
   },
   {
     title: "Aqua Gym Equipment",
+    image: "/products/Pump 1.png",
     items: [
       "Aqua Bike",
       "Aqua Treadmill",
@@ -80,6 +87,7 @@ const productCategories = [
   },
   {
     title: "Pool Safety Equipment",
+    image: "/products/Pump 1.png",
     items: [
       "Lifebuoy",
       "Rescue Tube",
@@ -91,6 +99,7 @@ const productCategories = [
   },
   {
     title: "Pool Competition Equipment",
+    image: "/products/Pump 1.png",
     items: [
       "Starting Blocks",
       "Lane Dividers",
@@ -99,6 +108,7 @@ const productCategories = [
   },
   {
     title: "Pool Maintenance Equipment",
+    image: "/products/Pump 1.png",
     items: [
       "Flat Net",
       "Deep Net",
@@ -113,6 +123,7 @@ const productCategories = [
   },
   {
     title: "Lighting",
+    image: "/products/Pump 1.png",
     items: [
       "Underwater Multicolour / NW / WW Lights",
       "Fiber Optic Starry Lights (Multicolour / NW / WW)",
@@ -121,6 +132,7 @@ const productCategories = [
   },
   {
     title: "Ladders",
+    image: "/products/Pump 1.png",
     items: [
       "Overflow Ladders",
       "Standard Ladders",
@@ -128,6 +140,7 @@ const productCategories = [
   },
   {
     title: "Additional Equipment",
+    image: "/products/Pump 1.png",
     items: [
       "Counter Current Systems",
       "Fastlane",
@@ -136,6 +149,7 @@ const productCategories = [
   },
   {
     title: "Water Features",
+    image: "/products/Pump 1.png",
     items: [
       "MagicStream Laminar",
       "MagicFlame Foam Jet",
@@ -154,6 +168,7 @@ const productCategories = [
   },
   {
     title: "Water Wellness Equipment",
+    image: "/products/Pump 1.png",
     items: [
       "Hot Tubs & Spas",
       "Swim Spas",
@@ -166,6 +181,7 @@ const productCategories = [
   },
   {
     title: "Landscape Products",
+    image: "/products/Pump 1.png",
     items: [
       "Readymade Grass / Turf",
       "Decking Wood / WPC",
@@ -184,6 +200,7 @@ const productCategories = [
   },
   {
     title: "Tiling",
+    image: "/products/Pump 1.png",
     items: [
       "Glass Mosaic Tiles",
       "Porcelain Tiles",
@@ -314,22 +331,41 @@ export default function SwimmingPoolProductsPage() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.15 }}
-                className="bg-white/60 border border-gold-200/30 hover:border-gold-400/40 rounded-3xl p-8 transition-all duration-300 hover:bg-white/80 hover:shadow-lg hover:shadow-brand-950/5"
+                className="group relative bg-white/60 border border-gold-200/30 hover:border-gold-400/40 rounded-3xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-brand-950/5"
               >
-                <h3
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                  className="text-xl font-bold text-brand-700 mb-5"
-                >
-                  {category.title}
-                </h3>
-                <ul className="space-y-2.5">
-                  {category.items.map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-brand-500/75 text-sm">
-                      <div className="w-1.5 h-1.5 rounded-full bg-gold-500 flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                {/* Front — content */}
+                <div className="p-8 transition-opacity duration-500 group-hover:opacity-0">
+                  <h3
+                    style={{ fontFamily: "var(--font-playfair)" }}
+                    className="text-xl font-bold text-brand-700 mb-5"
+                  >
+                    {category.title}
+                  </h3>
+                  <ul className="space-y-2.5">
+                    {category.items.map((item) => (
+                      <li key={item} className="flex items-center gap-3 text-brand-500/75 text-sm">
+                        <div className="w-1.5 h-1.5 rounded-full bg-gold-500 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Back — image */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/30 to-transparent" />
+                  <h3
+                    style={{ fontFamily: "var(--font-playfair)" }}
+                    className="absolute bottom-6 left-6 right-6 text-xl font-bold text-cream-50"
+                  >
+                    {category.title}
+                  </h3>
+                </div>
               </motion.div>
             ))}
           </div>
