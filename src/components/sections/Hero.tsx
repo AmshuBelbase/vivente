@@ -110,9 +110,13 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 1.0, ease: "easeOut" }}
           className="text-cream-200/60 text-lg md:text-xl font-light max-w-2xl leading-relaxed mb-10"
         >
-          At Vivente, we bring together design, engineering, and innovation to
+          {/* At Vivente, we bring together design, engineering, and innovation to
           create timeless spaces. Every project is crafted to elevate lifestyle,
-          comfort, and value.
+          comfort, and value. */}
+
+          Vivente Lifestyle is India's leading name in luxury construction, architecture, interior design, landscaping, swimming pools, water features, and real estate solutions based on Chennai — creating timeless spaces that define modern comfort, elegance, and value.
+
+
         </motion.p>
 
         {/* CTA Buttons */}
