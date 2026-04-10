@@ -1,8 +1,13 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
-export const metadata = {
-  title: "Luxury Villa & Bungalow Construction in Chennai | Vivente Lifestyle",
-  description: "Bespoke luxury villa construction, residential developments, and premium commercial projects built with precision and excellence.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Luxury Construction',
+  description: 'Vivente specializes in the construction of luxury villas, residential developments, and premium commercial projects. Combining modern engineering, meticulous craftsmanship, and superior materials, we deliver structures that are both architecturally striking and built to endure for generations. Every structure we build reflects durability, architectural excellence, and timeless design.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/services/construction',
+  },
 };
 
 export default function ConstructionPage() {

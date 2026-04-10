@@ -1,8 +1,12 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: "Premium Facility Management & Maintenance Services in Chennai | Vivente Lifestyle",
-  description: "Professional facility management and property care services to keep your property pristine, efficient, and valuable.",
+export const metadata: Metadata = {
+  title: 'Premium Facility Management & Maintenance Services in Chennai',
+  description: 'Professional facility management and property care services to keep your property pristine, efficient, and valuable.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/services/facility-management',
+  },
 };
 
 export default function FacilityManagementPage() {

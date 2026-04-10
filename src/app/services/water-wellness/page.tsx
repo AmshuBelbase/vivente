@@ -1,8 +1,13 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
-export const metadata = {
-  title: "Water Wellness Spas & Hydrotherapy Pools in Chennai | Vivente Lifestyle",
-  description: "Luxury wellness environments — saunas, steam rooms, hot tubs, jacuzzis, and swim spas for relaxation and rejuvenation.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Luxury Water Wellness & Hydrotherapy in Chennai',
+  description: 'Premium & Luxury water wellness solutions — saunas, steam rooms, hot tubs, jacuzzis, and swim spas for relaxation and rejuvenation.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/services/water-wellness',
+  },
 };
 
 export default function WaterWellnessPage() {

@@ -1,8 +1,13 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 
-export const metadata = {
-  title: "Luxury Interior Design & Turnkey Interiors in Chennai | Vivente Lifestyle",
-  description: "Bespoke interior design and turnkey execution for luxury residences and commercial spaces.",
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Luxury Interior Design & Turnkey Interiors in Chennai',
+  description: 'Bespoke interior design and turnkey execution for luxury residences and commercial spaces.',
+  alternates: {
+    canonical: 'https://viventelifestyle.com/services/interior-design',
+  },
 };
 
 export default function InteriorDesignPage() {
