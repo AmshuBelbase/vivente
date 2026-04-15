@@ -17,7 +17,7 @@ export default function InteriorDesignPage() {
       title="Interior Design & Execution"
       subtitle="Transforming spaces into refined expressions of luxury and comfort — from concept to complete turnkey execution."
       heroGradient=""
-      imagePath="/projects/azure-heights.jpg"
+      imagePath="/projects/Interior_design.png"
       overview="Vivente delivers bespoke interior design solutions for luxury residences and commercial spaces that embody elegance, comfort, and timeless sophistication. From concept development to final execution, our designers curate every detail to create interiors that reflect individuality while maintaining the highest standards of luxury design and craftsmanship. Our comprehensive turnkey solutions ensure seamless project delivery with refined aesthetics and functional excellence."
       offeringsTitle="Our Design Services"
       offerings={[

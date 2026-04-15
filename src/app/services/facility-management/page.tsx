@@ -16,7 +16,7 @@ export default function FacilityManagementPage() {
       title="Facility Management"
       subtitle="Professional property care services ensuring every installation remains pristine, efficient, and valuable for years to come."
       heroGradient=""
-      imagePath="/projects/azure-heights.jpg"
+      imagePath="/Gallery/gallery4.jpg"
       overview="Vivente provides professional facility management and property care services to ensure every property remains efficient, secure, and impeccably maintained. Our commitment extends far beyond project completion — through Annual Maintenance Contracts (AMC) and professional facility management, we ensure every property, installation, and environment continues to operate flawlessly, preserving both performance and long-term value."
       offeringsTitle="Management Services"
       offerings={[
