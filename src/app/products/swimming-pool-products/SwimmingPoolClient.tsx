@@ -140,7 +140,7 @@ const productCategories = [
   },
   {
     title: "Additional Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/Additional_equipment.png",
     items: [
       "Counter Current Systems",
       "Fastlane",
@@ -149,7 +149,7 @@ const productCategories = [
   },
   {
     title: "Water Features",
-    image: "/products/Pump 1.png",
+    image: "/products/water_wellnes.png",
     items: [
       "MagicStream Laminar",
       "MagicFlame Foam Jet",
@@ -168,7 +168,7 @@ const productCategories = [
   },
   {
     title: "Water Wellness Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/water_feature_equip.png",
     items: [
       "Hot Tubs & Spas",
       "Swim Spas",
@@ -181,7 +181,7 @@ const productCategories = [
   },
   {
     title: "Landscape Products",
-    image: "/products/Pump 1.png",
+    image: "/products/landscaping.png",
     items: [
       "Readymade Grass / Turf",
       "Decking Wood / WPC",
@@ -200,7 +200,7 @@ const productCategories = [
   },
   {
     title: "Tiling",
-    image: "/products/Pump 1.png",
+    image: "/products/tiling.png",
     items: [
       "Glass Mosaic Tiles",
       "Porcelain Tiles",

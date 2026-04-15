@@ -17,7 +17,7 @@ export default function LandscapingPage() {
       title="Landscaping"
       subtitle="Crafting sophisticated landscape environments that enhance outdoor living and create serene, resort-inspired spaces."
       heroGradient=""
-      imagePath="/projects/azure-heights.jpg"
+      imagePath="/projects/SOL_FITNESS_RESORT.jpg"
       overview="Vivente creates sophisticated landscape environments that enhance outdoor living and architectural harmony. Our landscape specialists blend natural elements, innovative design, and sustainable practices to craft outdoor spaces that are visually striking, functional, and enduring. From private gardens to large estate landscapes, we transform outdoor environments into refined living experiences."
       offeringsTitle="Landscaping Services"
       offerings={[
