@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/ui/SectionHeader";
+import { useEffect, useState } from "react";
 import {
   fadeInUp,
   fadeInLeft,
@@ -67,6 +68,16 @@ const whatWeDo = [
 ];
 
 export default function AboutPage() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 1024);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const founderTextViewport = { once: false, amount: isMobile ? 0.05 : 0.2 };
+
   return (
     <main className="relative">
       <Navbar alwaysDark />
@@ -273,7 +284,7 @@ export default function AboutPage() {
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
-              viewport={viewport}
+              viewport={founderTextViewport}
               style={{ fontFamily: "var(--font-cormorant)" }}
               className="text-cream-100/90 text-xl md:text-2xl font-light italic leading-relaxed space-y-5"
             >
