@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: 'https://viventelifestyle.com/services/interior-design',
   },
 };
-
+//D
 export default function InteriorDesignPage() {
   return (
     <ServicePageLayout
