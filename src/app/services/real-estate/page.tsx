@@ -17,7 +17,7 @@ export default function RealEstatePage() {
       title="Real Estate & Consultancy"
       subtitle="Strategic real estate advisory connecting clients with exceptional investment opportunities — guided by expertise and trust."
       heroGradient=""
-      imagePath="/projects/azure-heights.jpg"
+      imagePath="/Gallery/gallery3.png"
       overview="Vivente provides exclusive real estate services and property consultancy, connecting clients with exceptional residential and commercial investment opportunities. As trusted channel partners for leading developers, we offer privileged access to premium real estate projects and guide clients through every stage of property acquisition and investment with transparency, value, and confidence."
       offeringsTitle="Our Services"
       offerings={[

@@ -41,7 +41,7 @@ const productCategories = [
   },
   {
     title: "Pool White Goods",
-    image: "/products/Pump 1.png",
+    image: "/products/pool_white_goods.jpg",
     items: [
       "Skimmer Box (Wide/Small Mouth)",
       "Deckbox",
@@ -56,7 +56,7 @@ const productCategories = [
   },
   {
     title: "Pool Chemicals",
-    image: "/products/Pump 1.png",
+    image: "/products/Pool Chemicals.png",
     items: [
       "Chlorine",
       "Soda Ash",
@@ -67,7 +67,7 @@ const productCategories = [
   },
   {
     title: "Pool Furniture",
-    image: "/products/Pump 1.png",
+    image: "/products/Pool Furniture.png",
     items: [
       "Loungers",
       "Poolside Umbrellas",
@@ -77,7 +77,7 @@ const productCategories = [
   },
   {
     title: "Aqua Gym Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/Aqua Gym Equipments.png",
     items: [
       "Aqua Bike",
       "Aqua Treadmill",
@@ -87,7 +87,7 @@ const productCategories = [
   },
   {
     title: "Pool Safety Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/Pool Safety Equipment.png",
     items: [
       "Lifebuoy",
       "Rescue Tube",
@@ -99,7 +99,7 @@ const productCategories = [
   },
   {
     title: "Pool Competition Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/Pool Competition Equipment.png",
     items: [
       "Starting Blocks",
       "Lane Dividers",
@@ -108,7 +108,7 @@ const productCategories = [
   },
   {
     title: "Pool Maintenance Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/Pool Maintenance Equipment.png",
     items: [
       "Flat Net",
       "Deep Net",
@@ -123,7 +123,7 @@ const productCategories = [
   },
   {
     title: "Lighting",
-    image: "/products/Pump 1.png",
+    image: "/products/Lighting.png",
     items: [
       "Underwater Multicolour / NW / WW Lights",
       "Fiber Optic Starry Lights (Multicolour / NW / WW)",
@@ -132,7 +132,7 @@ const productCategories = [
   },
   {
     title: "Ladders",
-    image: "/products/Pump 1.png",
+    image: "/products/ladder.png",
     items: [
       "Overflow Ladders",
       "Standard Ladders",
@@ -140,7 +140,7 @@ const productCategories = [
   },
   {
     title: "Additional Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/Additional_equipment.png",
     items: [
       "Counter Current Systems",
       "Fastlane",
@@ -149,7 +149,7 @@ const productCategories = [
   },
   {
     title: "Water Features",
-    image: "/products/Pump 1.png",
+    image: "/products/water_wellnes.png",
     items: [
       "MagicStream Laminar",
       "MagicFlame Foam Jet",
@@ -168,7 +168,7 @@ const productCategories = [
   },
   {
     title: "Water Wellness Equipment",
-    image: "/products/Pump 1.png",
+    image: "/products/water_feature_equip.png",
     items: [
       "Hot Tubs & Spas",
       "Swim Spas",
@@ -181,7 +181,7 @@ const productCategories = [
   },
   {
     title: "Landscape Products",
-    image: "/products/Pump 1.png",
+    image: "/products/landscaping.png",
     items: [
       "Readymade Grass / Turf",
       "Decking Wood / WPC",
@@ -200,7 +200,7 @@ const productCategories = [
   },
   {
     title: "Tiling",
-    image: "/products/Pump 1.png",
+    image: "/products/tiling.png",
     items: [
       "Glass Mosaic Tiles",
       "Porcelain Tiles",

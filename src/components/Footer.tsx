@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, viewport } from "@/lib/animations";
-import { Instagram, Facebook, Linkedin, Twitter, ArrowRight, XIcon } from "lucide-react";
+import { Instagram, ArrowRight, XIcon } from "lucide-react";
 import { COMPANY } from "@/lib/company";
 
 const serviceLinks = [
@@ -18,10 +18,8 @@ const serviceLinks = [
 ];
 
 const socials = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: XIcon, href: "#", label: "X" },
+  { icon: Instagram, href: "https://www.instagram.com/viventelifestyle/", label: "Instagram" },
+  { icon: XIcon, href: "https://x.com/viventelifestyl", label: "X" },
 ];
 
 export default function Footer() {
@@ -62,6 +60,8 @@ export default function Footer() {
                     key={s.label}
                     href={s.href}
                     aria-label={s.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-9 h-9 rounded-full border border-brand-700/50 hover:border-gold-500/60 flex items-center justify-center text-cream-200/30 hover:text-gold-400 transition-all duration-300"
                   >
                     <Icon size={15} />

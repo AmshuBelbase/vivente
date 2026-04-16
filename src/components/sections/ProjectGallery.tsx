@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryImages = [
-  { src: "/projects/Cathedral_Rises.jpg", alt: "Cathedral Rises project" , caption: "Cathedral Rises" },
-  { src: "/projects/SOL_FITNESS_RESORT.jpg", alt: "SOL FITNESS RESORT project" , caption: "SOL FITNESS RESORT" },
-  { src: "/projects/classic_jhula.png", alt: "Classic Jhula project" , caption: "Classic Jhula" },
-  { src: "/projects/serenity-wellness-retreat.jpg", alt: "Serenity Wellness Retreat project" , caption: "Serenity Wellness Retreat" },
-  { src: "/projects/cascade-falls.jpg", alt: "Cascade Falls project" , caption: "Cascade Falls" },
+  { src: "/Gallery/gallery1.png", alt: "Cathedral Rises project" , caption: "Cathedral Rises" },
+  { src: "/Gallery/gallery2.png", alt: "SOL FITNESS RESORT project" , caption: "SOL FITNESS RESORT" },
+  { src: "/Gallery/gallery4.jpg", alt: "Serenity Wellness Retreat project" , caption: "Serenity Wellness Retreat" },
+  { src: "/Gallery/gallery3.png", alt: "Classic Jhula project" , caption: "Classic Jhula" },
+  // { src: "/projects/cascade-falls.jpg", alt: "Cascade Falls project" , caption: "Cascade Falls" },
 ];
 
 export default function ProjectGallery() {
