@@ -123,7 +123,7 @@ const productCategories = [
   },
   {
     title: "Lighting",
-    image: "/products/Lighting.png",
+    image: "/products/Lighting.png",//changed
     items: [
       "Underwater Multicolour / NW / WW Lights",
       "Fiber Optic Starry Lights (Multicolour / NW / WW)",
