@@ -9,6 +9,8 @@ const galleryImages = [
   { src: "/Gallery/gallery2.png", alt: "SOL FITNESS RESORT project" , caption: "SOL FITNESS RESORT" },
   { src: "/Gallery/gallery4.jpg", alt: "Serenity Wellness Retreat project" , caption: "Serenity Wellness Retreat" },
   { src: "/Gallery/gallery3.png", alt: "Classic Jhula project" , caption: "Classic Jhula" },
+  { src: "/Gallery/gallery5.jpeg", alt: "Classic Jhula project" , caption: "Classic Jhula" },
+
   // { src: "/projects/cascade-falls.jpg", alt: "Cascade Falls project" , caption: "Cascade Falls" },
 ];
 

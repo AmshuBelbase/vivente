@@ -18,7 +18,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 const services = [
   {
     icon: Building2,
-    title: "Luxury Construction",
+    title: "Luxury and Heritage Construction",
     desc: "We design and build bespoke luxury villas that combine architectural excellence with modern living. Our villas are thoughtfully planned to deliver comfort, aesthetics, and long-term durability.",
     accent: "from-brand-700 to-brand-800",
     href: "/services/construction",

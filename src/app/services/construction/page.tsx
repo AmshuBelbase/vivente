@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Luxury Construction',
+  title: 'Luxury and Heritage Construction',
   description: 'Vivente specializes in the construction of luxury villas, residential developments, and premium commercial projects. Combining modern engineering, meticulous craftsmanship, and superior materials, we deliver structures that are both architecturally striking and built to endure for generations. Every structure we build reflects durability, architectural excellence, and timeless design.',
   alternates: {
     canonical: 'https://viventelifestyle.com/services/construction',
@@ -14,7 +14,7 @@ export default function ConstructionPage() {
   return (
     <ServicePageLayout
       eyebrow="Our Services"
-      title="Luxury Construction"
+      title="Luxury and Heritage Construction"
       subtitle="Transforming architectural visions into exceptional built environments through precision-driven construction and luxury development."
       heroGradient=""
       imagePath="/projects/azure-heights.jpg"

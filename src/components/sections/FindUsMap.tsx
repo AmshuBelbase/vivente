@@ -98,14 +98,12 @@ export default function FindUsMap() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Vivente Location"
             />
-            <div className="absolute top-4 left-4 bg-brand-950/90 backdrop-blur-sm border border-gold-500/30 rounded-xl px-4 py-2.5 flex items-center gap-2">
-              <MapPin size={14} className="text-gold-400" />
-              <span
-                style={{ fontFamily: "var(--font-playfair)" }}
-                className="text-cream-100 text-sm font-semibold"
-              >
-                Vivente
-              </span>
+            <div className="absolute top-4 right-4">
+              <img
+                src="/vivente_bg.png"
+                alt="Vivente"
+                className="h-12 w-auto"
+              />
             </div>
           </motion.div>
         </div>
