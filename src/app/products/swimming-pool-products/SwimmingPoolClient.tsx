@@ -140,7 +140,7 @@ const productCategories = [
   },
   {
     title: "Additional Equipment",
-    image: "/products/Additional_equipment.png",
+    image: "/products/pool_automation.png",
     items: [
       "Counter Current Systems",
       "Fastlane",
