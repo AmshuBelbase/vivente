@@ -7,15 +7,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/#services" },
-  { label: "Products", href: "/#products" },
-  { label: "About", href: "/about" },
+  { label: "Home",     href: "/",          activePrefix: "/",         sectionId: "home" },
+  { label: "Services", href: "/#services", activePrefix: "/services", sectionId: "services" },
+  { label: "Products", href: "/#products", activePrefix: "/products", sectionId: "products" },
+  { label: "About",    href: "/about",     activePrefix: "/about" },
 ];
+
+type NavLink = (typeof navLinks)[number];
 
 export default function Navbar({ alwaysDark = false }: { alwaysDark?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -24,13 +27,43 @@ export default function Navbar({ alwaysDark = false }: { alwaysDark?: boolean })
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Scroll-spy: on the home page, highlight the nav item for whichever
+  // section is currently in view. Handles direct /#section URLs, clicks,
+  // and manual scrolling alike.
+  useEffect(() => {
+    if (pathname !== "/") return;
+
+    const sections = ["home", "services", "products"]
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) setActiveSection(visible[0].target.id);
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, [pathname]);
+
   const isDark = alwaysDark || scrolled;
 
-  // Section anchors (/#...) are never highlighted — only standalone pages get active state
-  const isActive = (href: string) => {
-    if (href.startsWith("/#")) return false;
-    if (href === "/") return pathname === "/";
-    return pathname === href || pathname.startsWith(href + "/");
+  const isActive = (link: NavLink) => {
+    // Sub-pages (e.g. /services/water-wellness) match by path prefix.
+    if (link.activePrefix !== "/" && (pathname === link.activePrefix || pathname.startsWith(link.activePrefix + "/"))) {
+      return true;
+    }
+    // On the home page, match by the section currently in view.
+    if (pathname === "/" && "sectionId" in link) {
+      return activeSection === link.sectionId;
+    }
+    return false;
   };
 
   return (
@@ -57,7 +90,7 @@ export default function Navbar({ alwaysDark = false }: { alwaysDark?: boolean })
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
-            const active = isActive(link.href);
+            const active = isActive(link);
             return (
               <Link
                 key={link.label}
@@ -115,9 +148,9 @@ export default function Navbar({ alwaysDark = false }: { alwaysDark?: boolean })
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className={`text-cream-200/80 hover:text-gold-300 text-sm font-medium tracking-widest uppercase transition-colors ${
-                      isActive(link.href) ? "text-gold-300" : ""
-                    }`}
+                    className={`${
+                      isActive(link) ? "text-gold-300" : "text-cream-200/80 hover:text-gold-300"
+                    } text-sm font-medium tracking-widest uppercase transition-colors`}
                   >
                     {link.label}
                   </Link>
